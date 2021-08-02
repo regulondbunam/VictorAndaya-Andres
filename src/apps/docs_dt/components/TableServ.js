@@ -25,15 +25,6 @@ const TableServ = (props) => {
                 <a href={ObjectService.Nombre} className={TableCSS.service}>
                   {ObjectService.Nombre}
                 </a>
-                {/* <Link
-                  to={{
-                    pathname: ObjectService.Nombre,
-                    state: { Object: ObjectService },
-                  }}
-                  className={TableCSS.service}
-                >
-                  {ObjectService.Nombre}
-                </Link> */}
               </td>
               <td className={TableCSS.description}>
                 <p className={TableCSS.DescriptionService}>
