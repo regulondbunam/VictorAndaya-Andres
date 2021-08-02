@@ -1,3 +1,4 @@
+import webService from "./../../../conf/apollo.conf.json";
 export const Node = (exampleQuery) => {
   return [
     `
@@ -10,7 +11,7 @@ async function getData() {
         });
     
   const response = await fetch(
-    'http://132.248.220.201:4001/graphql',
+    \`${webService.graphQlUrl}\`,
       {
         method: 'post',
         body: data,
@@ -38,7 +39,7 @@ export const Python2 = (exampleQuery) => {
 from graphqlclient import GraphQLClient
 
 def main():
-    client = GraphQLClient('http://132.248.220.201:4001/graphql')
+    client = GraphQLClient(\`${webService.graphQlUrl}\`)
 
     result = client.execute('''${exampleQuery}''')
 
@@ -57,7 +58,7 @@ export const Python3 = (exampleQuery) => {
 import requests
 import json
 
-endpoint = f"http://132.248.220.201:4001/graphql"
+endpoint = f\`${webService.graphQlUrl}\`
 
 query = """${exampleQuery}"""
 
@@ -77,7 +78,7 @@ export const R = (exampleQuery) => {
 library("ghql")
 library("jsonlite")
 
-con <- GraphqlClient$new("http://132.248.220.201:4001/graphql")
+con <- GraphqlClient$new(\`${webService.graphQlUrl}\`)
 qry <- Query$new()
 
 qry$query('dc', '${exampleQuery}')
@@ -109,7 +110,7 @@ class Main {
         CloseableHttpResponse response = null;
     
         client = HttpClients.createDefault();
-        HttpPost httpPost = new HttpPost("http://132.248.220.201:4001/graphql");
+        HttpPost httpPost = new HttpPost(\`${webService.graphQlUrl}\`);
     
       
         httpPost.addHeader("Content-Type", "application/json");
@@ -162,7 +163,7 @@ require 'uri'
     
 query = """${exampleQuery}"""
     
-uri = URI("http://132.248.220.201:4001/graphql")
+uri = URI(\`${webService.graphQlUrl}\`)
 
 res = Net::HTTP.start(uri.host, uri.port) do |http|
     req = Net::HTTP::Post.new(uri)
@@ -181,7 +182,7 @@ puts(res.body)
 export const Curl = (exampleQuery) => {
   return [
     `
-curl 'http://132.248.220.201:4001/graphql' \
+curl \`${webService.graphQlUrl}\` \
 -X POST \
 -H 'content-type: application/json' \
 --data '{
