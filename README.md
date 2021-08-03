@@ -1,38 +1,59 @@
-# [Software name]
+# RegulonDB-GraphQLAPI-Manual
 
 # Description
 
-[High-level description, describing what exactly software does.]
+A dynamic web page in React that displays the documentation of all the web services that compose the GraphQL-API of RegulonDB performing introspection queries to it in real time.
 
 # Motivation
 
-[Why the software does things the way it does and why it was designed in the first place. What problems are solved by it. Links to publications and comparisons to similar software.]
-
-
+With the update of RegulonDB to new technologies such as GraphQL, MongoDB and NodeJS, following the guidelines called FAIR software principles, this application builds a web page that displays all the available services through queries to the GraphQL service.
 
 # System requirements
 
-[If the software does make high demand on particular resources, then this should be clearly advertised and explained.]
+Required software
 
-# Install 
+- Node ^14.15.4
+- NPM ^6.14.10
 
-[This may be described in a separate INSTALL file, but the README must then clearly state this.]
+# Install
 
+Once the repo is cloned, use this command to install all libraries dependencies of the application
 
+```bash
+$ npm install
+```
+
+Edit `apollo.conf.json` file and change graphQlUrl value to the web service URL
+
+```
+{
+  "graphQlUrl": "GraphQL API URL"
+}
+```
 
 # Quick start
 
-[How the first task can be performed with the software, or, in the more extensive  documentation, a link to the quick start. Outlines how to quickly get started with the software using a basic yet practical example]
+Just use this command to start the web application
 
+```
+$ npm start
+```
 
+the application will run on port 3000 (by default) http://localhost:3000/
 
-# Project website 
+# Project website
 
 [Website where the software is described and allows users to obtain it as well as its documentation.]
 
 # License
 
-[Defines the set of rules and conditions for people who want to use the software.]
+Copyright 2021 RegulonDB
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Support contact information
 
@@ -49,11 +70,11 @@
 
 **Documentation**
 
-- [ ] README file
+- [x] README file
 
 **Learnability**
 
-- [ ] Quick start
+- [x] Quick start
 
 **Buildability**
 
@@ -65,7 +86,7 @@
 
 **Copyright & Licensing**
 
-- [ ] LICENSE file
+- [x] LICENSE file
 
 **Portability**
 
@@ -87,8 +108,8 @@
 
 **Changeability**
 
-- [ ] CONTRIBUTING file
-- [ ] Code of Conduct file
+- [x] CONTRIBUTING file
+- [x] Code of Conduct file
 - [ ] Code changes, and their authorship, publicly visible
 
 **Reusability**
@@ -98,5 +119,3 @@
 **Security & Privacy**
 
 - [ ] Passwords must never be stored in unhashed form
-
-

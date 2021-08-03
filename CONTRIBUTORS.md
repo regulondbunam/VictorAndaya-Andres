@@ -1,13 +1,7 @@
-## [Software name]
+## RegulonDB GraphQLAPI Manual
 
-__Contributors__ 
+**Contributors**
 
-[Software name] Version [release version] has been developed by RegulonDB team with contributions from the following.
+RegulonDB GraphQLAPI Manual Version [v1.0] has been developed by RegulonDB team with contributions from the following.
 
-- [Full name]] ([@user]()) [contribution description].
-- [Full name]] ([@user]()) [contribution description].
-- [Full name]] ([@user]()) [contribution description]. (Pull Requests [#x](), [#x]()).
-- [Full name]] ([@user]()) [contribution description]. (Pull Requests [#x](), [#x]()).
-
-
-
+- [Victor Daniel Andaya Tabarez]] ([@VictorAndaya]()) [Developed the application].
